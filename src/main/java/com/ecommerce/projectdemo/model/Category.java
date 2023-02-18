@@ -14,15 +14,12 @@ public class Category {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @OneToMany
-    @Column(name = "productId")
+    @OneToMany(mappedBy = "category")
+    @Column(name = "product")
     private List<Product> product;
 
     @Column
     private String name;
-
-    @Column
-    private String desc;
 
 
 }

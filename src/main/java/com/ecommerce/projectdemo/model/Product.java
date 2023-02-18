@@ -23,9 +23,11 @@ public class Product {
     private String name;
     @Column(name = "price")
     private Double price;
-    @Column(name = "amount")
+    @Column(name = "stock")
     private Integer stock;
     @Column(name = "brandName")
     private String brandName;
+    @ManyToOne
+    private Category category;
 
 }

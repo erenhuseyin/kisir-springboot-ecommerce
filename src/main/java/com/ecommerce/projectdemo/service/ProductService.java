@@ -13,7 +13,7 @@ public class ProductService {
 
     private final ProductRepository productRepository;
 
-    public List<Product> getproduct(){
+    public List<Product> getProduct(){
         return productRepository.findAll();
     }
 
@@ -38,6 +38,7 @@ public class ProductService {
         oldProduct.setPrice(productData.getPrice());
         oldProduct.setStock(productData.getStock());
         oldProduct.setBrandName(productData.getBrandName());
+        oldProduct.setCategory(productData.getCategory());
         productRepository.save(oldProduct);
     }
 }
