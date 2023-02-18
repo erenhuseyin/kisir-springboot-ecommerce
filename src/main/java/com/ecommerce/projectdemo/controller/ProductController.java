@@ -1,7 +1,6 @@
 package com.ecommerce.projectdemo.controller;
 
 import com.ecommerce.projectdemo.model.Product;
-import com.ecommerce.projectdemo.repository.ProductRepository;
 import com.ecommerce.projectdemo.service.ProductService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
