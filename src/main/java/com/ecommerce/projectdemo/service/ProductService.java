@@ -38,7 +38,6 @@ public class ProductService {
         oldProduct.setPrice(productData.getPrice());
         oldProduct.setStock(productData.getStock());
         oldProduct.setBrandName(productData.getBrandName());
-        oldProduct.setCategory(productData.getCategory());
         productRepository.save(oldProduct);
     }
 }

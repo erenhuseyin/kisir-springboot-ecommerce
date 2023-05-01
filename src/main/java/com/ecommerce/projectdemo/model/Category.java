@@ -18,9 +18,8 @@ public class Category {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @OneToMany(mappedBy = "category", cascade = CascadeType.ALL)
+    @OneToMany(cascade = CascadeType.ALL)
     @Column(name = "products")
-    @JsonManagedReference
     private List<Product> product;
 
     @Column(name = "name", nullable = false)

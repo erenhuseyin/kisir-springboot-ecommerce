@@ -34,9 +34,4 @@ public class Product {
     @Temporal(TemporalType.TIMESTAMP)
     private Date updateDate;
 
-    @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "category")
-    @JsonBackReference
-    private Category category;
-
 }
